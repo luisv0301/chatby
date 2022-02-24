@@ -67,7 +67,7 @@ function createObserver() {
 
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.intersectionRatio > 0) {
+      if (entry.isIntersecting) {
         wsLink.classList.add("popup");
         observer.unobserve(entry.target);
       }
