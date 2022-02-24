@@ -1,11 +1,11 @@
 const btns = document.getElementsByClassName("social-btn");
-const whatsAppBtn = btns[0];
+const facebookBtn = btns[2];
 const wave = document.getElementById("wave");
-const waveBgColors = ["25D366", "F50087", "0099FF"];
+const waveBgColors = ["25D366", "8E0FD5FA", "0099FF"];
 let btnsCounter = 0;
 let timerCounter = 2;
 
-btns[2].classList.remove("isGray");
+facebookBtn.classList.remove("isGray");
 
 const timer = setInterval(() => {
   btns[timerCounter].classList.add("isGray");
