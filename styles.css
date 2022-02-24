@@ -124,7 +124,7 @@ h2 + p {
   transform: scale(0.5);
   transition: all 650ms ease-in-out;
 }
-.ws-link {
+.ws-link > svg {
   width: 94px;
 }
 .popup {
