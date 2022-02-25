@@ -34,6 +34,7 @@ Array.from(btns).forEach((btn, index) => {
 if (window.matchMedia("(max-width: 520px)").matches) {
   [...btns].forEach((btn) => btn.classList.remove("isGray"));
   const arrows = document.querySelectorAll(".button-arrow");
+
   let count = 2;
   if (timer) {
     clearInterval(timer);
@@ -50,7 +51,10 @@ if (window.matchMedia("(max-width: 520px)").matches) {
         count = 2;
       }
       btns[count].classList.remove("hide");
-      wave.style.setProperty("--bg-color", "#" + waveBgColors[count]);
+      document.documentElement.style.setProperty(
+        "--bg-color-btn",
+        "#" + waveBgColors[count]
+      );
     });
   });
 }
