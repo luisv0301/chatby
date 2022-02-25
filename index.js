@@ -31,7 +31,7 @@ Array.from(btns).forEach((btn, index) => {
   });
 });
 
-if (window.matchMedia("(max-width: 490px)").matches) {
+if (window.matchMedia("(max-width: 520px)").matches) {
   [...btns].forEach((btn) => btn.classList.remove("isGray"));
   const arrows = document.querySelectorAll(".button-arrow");
   let count = 2;
