@@ -449,7 +449,8 @@ footer > span {
   .hide {
     display: none;
   }
-  nav > svg {
+  nav > svg,
+  .menu > svg {
     height: 23px;
     width: auto;
   }
