@@ -68,6 +68,7 @@ function createObserver() {
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
+        console.log("ejecutando el 1");
         wsLink.classList.add("popup");
         observer.unobserve(entry.target);
       }
@@ -77,3 +78,16 @@ function createObserver() {
 }
 
 createObserver();
+
+const menu = document.getElementById("menu");
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 66 || document.documentElement.scrollTop > 66) {
+    menu.classList.add("menu--active");
+  } else {
+    menu.classList.remove("menu--active");
+  }
+}
