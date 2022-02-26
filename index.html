@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatby</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -99,22 +101,94 @@
             </div>
           </div>
         </nav>
-
         <svg
-          class="wave"
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
-          width="1006.15"
-          height="1099.17"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 1006.15 1099.17"
+          class="wave hideWave"
         >
-          <title>wave</title>
+          <defs>
+            <linearGradient
+              id="Degradado_sin_nombre_12"
+              x1="-0.15"
+              y1="549.58"
+              x2="1006"
+              y2="549.58"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#25d366" />
+              <stop offset="1" stop-color="#23933a" />
+            </linearGradient>
+          </defs>
+          <title>Untitled-1</title>
           <path
-            id="wave"
-            d="M0.26,0C-1.05,42,2,103.37,25.56,171,88.19,350.33,244.5,426.55,347.42,509.52,462,601.88,593.23,769.34,655.93,1099.17h350.22V0H0.26Z"
+            id="B-WhatsApp"
+            d="M0.1,0C-1.2,42,1.82,103.37,25.41,171,88,350.33,244.34,426.55,347.27,509.52c114.56,92.35,245.81,259.81,308.51,589.64H1006V0H0.1Z"
+            transform="translate(0.15 0)"
+            style="fill: url(#Degradado_sin_nombre_12)"
           />
         </svg>
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1006.15 1099.17"
+          class="wave hideWave"
+        >
+          <defs>
+            <linearGradient
+              id="Degradado_sin_nombre_2"
+              x1="503.08"
+              y1="1099.17"
+              x2="503.08"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#fec053" />
+              <stop offset="0.47" stop-color="#f2203e" />
+              <stop offset="0.71" stop-color="#b71fa8" />
+              <stop offset="1" stop-color="#5351d6" />
+            </linearGradient>
+          </defs>
+          <title>Untitled-1</title>
+          <path
+            id="B-WhatsApp"
+            d="M0.26,0C-1.05,42,2,103.37,25.56,171,88.19,350.33,244.5,426.55,347.42,509.52,462,601.88,593.23,769.34,655.93,1099.17h350.22V0H0.26Z"
+            style="fill: url(#Degradado_sin_nombre_2)"
+          />
+        </svg>
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 1006.15 1099.17"
+          class="wave"
+        >
+          <defs>
+            <linearGradient
+              id="Degradado_sin_nombre_6"
+              y1="549.58"
+              x2="1006.15"
+              y2="549.58"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#09f" />
+              <stop offset="0.61" stop-color="#a033ff" />
+              <stop offset="0.93" stop-color="#ff5280" />
+              <stop offset="1" stop-color="#ff7061" />
+            </linearGradient>
+          </defs>
+          <title>Untitled-1</title>
+          <path
+            id="B-WhatsApp"
+            d="M0.26,0C-1.05,42,2,103.37,25.56,171,88.19,350.33,244.5,426.55,347.42,509.52,462,601.88,593.23,769.34,655.93,1099.17h350.22V0H0.26Z"
+            style="fill: url(#Degradado_sin_nombre_6)"
+          />
+        </svg>
+
         <div class="header__container">
           <div class="header__info">
             <div class="online">
@@ -153,7 +227,7 @@
                 </button>
                 <button class="social-btn isGray hide">
                   <img src="images/ws-btn.svg" alt="whatsapp" />
-                  <div class="only-mobile">
+                  <div class="only-mobile whatsapp">
                     <svg
                       id="Layer_1"
                       data-name="Layer 1"
@@ -180,7 +254,7 @@
                   </div></button
                 ><button class="social-btn isGray hide">
                   <img src="images/ig-btn.svg" alt="instagram" />
-                  <div class="only-mobile">
+                  <div class="only-mobile instagram">
                     <svg
                       id="Layer_1"
                       data-name="Layer 1"
@@ -205,7 +279,7 @@
                 ><button class="social-btn isGray">
                   <img src="images/messenger-btn.svg" alt="messenger" />
 
-                  <div class="only-mobile">
+                  <div class="only-mobile messenger">
                     <svg
                       id="Layer_1"
                       data-name="Layer 1"
@@ -248,7 +322,12 @@
             </div>
           </div>
           <div class="header__img">
-            <img src="images/phone.png" alt="phone" />
+            <img
+              src="images/mockup-for-messenger.png"
+              alt="phone"
+              width="1080"
+              id="phone"
+            />
           </div>
         </div>
       </header>
