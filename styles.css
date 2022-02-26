@@ -549,6 +549,11 @@ footer > span {
     );
   }
 }
+@media (max-width: 400px) {
+  .header__img {
+    width: 125%;
+  }
+}
 @media (max-width: 348px) {
   .only-mobile {
     font-size: 0.8rem;
