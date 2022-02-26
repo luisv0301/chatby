@@ -203,6 +203,7 @@ header {
 }
 .header__img > img {
   width: 80%;
+  height: auto;
 }
 .wave {
   height: 30%;
