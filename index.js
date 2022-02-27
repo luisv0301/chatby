@@ -1,13 +1,15 @@
 const btns = document.getElementsByClassName("social-btn");
+const btnsArray = Array.from(btns);
+const isSmallScreen = window.matchMedia("(max-width: 520px)").matches;
 const facebookBtn = btns[2];
 const waves = document.getElementsByClassName("wave");
 const facebookWave = waves[2];
-const waveBgColors = ["25D366", "8E0FD5FA", "0099FF"];
 const images = [
   "images/mockup-for-whatsApp.png",
   "images/mockup-for-instagram.png",
   "images/mockup-for-messenger.png",
 ];
+
 const mockUp = document.getElementById("phone");
 let btnsCounter = 0;
 let timerCounter = 2;
@@ -26,26 +28,26 @@ const timer = setInterval(() => {
   waves[timerCounter].classList.remove("hideWave");
 }, 5000);
 
-Array.from(btns).forEach((btn, index) => {
-  btn.addEventListener("click", () => {
-    if (timer) {
-      btns[timerCounter].classList.add("isGray");
-      waves[timerCounter].classList.add("hideWave");
-      clearInterval(timer);
-    }
-
-    btns[btnsCounter].classList.add("isGray");
-    waves[btnsCounter].classList.add("hideWave");
-    btnsCounter = index;
-    btn.classList.remove("isGray");
-    mockUp.setAttribute("src", images[btnsCounter]);
-    waves[btnsCounter].classList.remove("hideWave");
-  });
+btnsArray.forEach((btn, index) => {
+  if (!isSmallScreen) {
+    btn.addEventListener("click", () => {
+      if (timer) {
+        btns[timerCounter].classList.add("isGray");
+        waves[timerCounter].classList.add("hideWave");
+        clearInterval(timer);
+      }
+      btns[btnsCounter].classList.add("isGray");
+      waves[btnsCounter].classList.add("hideWave");
+      btnsCounter = index;
+      btn.classList.remove("isGray");
+      mockUp.setAttribute("src", images[btnsCounter]);
+      waves[btnsCounter].classList.remove("hideWave");
+    });
+  }
 });
 
-if (window.matchMedia("(max-width: 520px)").matches) {
+if (isSmallScreen) {
   [...btns].forEach((btn) => btn.classList.remove("isGray"));
-  const clasess = ["whatsapp", "instagram", "messenger"];
   const arrows = document.querySelectorAll(".button-arrow");
 
   let count = 2;
